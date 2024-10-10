@@ -1,6 +1,6 @@
-#include<iostream>
-#include"process.h"
-#include"show_result.h"
+#include <iostream>
+#include "process.h"
+#include "show_result.h"
 using std::cout, std::endl;
 
 int main()
@@ -13,7 +13,6 @@ int main()
     cout << "show result: " << endl;
     ShowResult show;
     show.drawResult();
-    
 
     return 0;
 }
