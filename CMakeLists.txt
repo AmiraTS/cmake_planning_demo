@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.20.0)
 set(CMAKE_CXX_STANDARD 17)
-
 project(planning
     VERSION 0.0.1
     DESCRIPTION "a demo of cmake planning"
@@ -8,6 +7,7 @@ project(planning
     LANGUAGES CXX
 )
 
+enable_testing()
 #变量和目录设置
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 set(Process_Dir ${CMAKE_SOURCE_DIR}/src/process)
@@ -24,5 +24,5 @@ message(STATUS "********  Eigen3 3.4 found in ${EIGEN3_INCLUDE_DIR}  ********")
 endif()
 #添加子目录
 add_subdirectory(src)
-
+add_subdirectory(test/map_test)
 
